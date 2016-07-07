@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+.vertical{
+  transform: rotate(-90deg);
+  transform-origin: left top 0;
+  font-family: sans-serif;
+  color:#666;
+}
+.standard{
+  font-family: sans-serif;
+  color:#666;
+}
+
+</style>
+<script src="./solclient.js"></script>
+<script src="./monitor.js"></script>
+
+<body onload="init()">
+
+<!-- + - + - + - + - + - + - + - + - + - + - + - + - + -->
+<!--          MONITOR DISPLAY                          -->
+<!-- + - + - + - + - + - + - + - + - + - + - + - + - + -->
+<TABLE align=center>
+  <TR><TD colspan=3><H1 class=standard align=center>HA Cluster Demo</H1></TD></TR>
+  <TR>
+    <td></td>
+    <TD class="standard" align=center>Instance 1</TD>
+    <TD class="standard" align=center>Instance 2</TD>
+  </TR>
+  <TR>
+    <TD class="standard" align=right>HA Status:</TD><TD class="standard"><input id=HAStatus1></TD>
+    <TD class="standard"><input id=HAStatus2></TD>
+  </TR>
+  <TR>
+    <TD class="standard" align=right>Seq Status:</TD><TD class="standard"><input id=SeqStatus1></TD>
+    <TD class="standard"><input id=SeqStatus2></TD>
+  </TR>
+  <TR>
+    <TD class="standard" align=right>Last Input:</TD><TD class="standard"><input id=LastInput1></TD>
+    <TD class="standard"><input id=LastInput2></TD>
+  </TR>
+  <TR>
+    <TD class="standard" align=right>Last Output:</TD><TD class="standard"><input id=LastOutput1></TD>
+    <TD class="standard"><input id=LastOutput2></TD>
+  </TR>
+</TABLE>
+<!-- input align=center id=lastDisconnect -->
+
+</body>
+</html>
